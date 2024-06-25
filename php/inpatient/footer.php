@@ -1,0 +1,1 @@
+Copy right &copy; Nakhon Phanom Hospital

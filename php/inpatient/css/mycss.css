@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: tahoma, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 80%;
+	background: #FFF;
+}
+.txtBox {
+	font-family: verdana, tahoma, sans-serif;
+	font-size: 14px;
+}
+.txtBox2 {
+	text-align: center;
+}
+.textRedNormal {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: #F00;
+}
+.textBlackBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+    border: none;
+}
+#d1 {
+	width: 200px;
+	text-align: center;
+	height: 22px;
+	line-height: 1.5;
+}
+/*- Menu 13--------------------------- */
+#menu13 {
+	width: 200px;
+	margin: 0px 10px 0px 10px;
+}
+#menu13 li a {
+	height: 32px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	height: 24px;
+	text-decoration: none;
+}
+#menu13 li a:link, #menu13 li a:visited {
+	color: #C7377D;
+	display: block;
+	background:  url(../images/menu13.gif);
+	padding: 8px 0 0 10px;
+}
+#menu13 li a:hover, #menu13 li #current {
+	color: #C7377D;
+	background:  url(../images/menu13.gif) 0 -31px;
+	height: 24px	padding: 8px 0 0 10px;
+}
+a#k1:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#09F;
+	text-decoration: none;
+}
+a#k1:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#09F;
+	text-decoration: underline;
+}
+a#k1:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#09F;
+	text-decoration: none;
+}
