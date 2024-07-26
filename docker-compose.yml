@@ -31,14 +31,14 @@ services:
     networks:
       - mynetwork
 
-  palliative:
+  webaccount:
     build:
       context: ./php
       dockerfile: Dockerfile
-    container_name: palliative
+    container_name: webaccount
     restart: always
     volumes:
-      - ./php/palliative:/var/www/html
+      - ./php/webaccount:/var/www/html
     ports:
       - "7003:80"
     # depends_on:
