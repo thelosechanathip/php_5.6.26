@@ -1,4 +1,15 @@
 <?php require_once('ConnHos.php'); ?>
+<?php 
+  include "conlis.php";
+  session_start();
+
+  if(!isset($_SESSION['username'])) {
+    echo '<script>';
+    echo "window.location = 'login.php'";
+    echo '</script>';
+    exit(); // ใส่ exit() เพื่อหยุดการทำงานของสคริปต์
+  }
+?>
 <?php
 $currentPage = $_SERVER["PHP_SELF"];
 
@@ -152,7 +163,10 @@ dml = document.form1;
                   <td align="left"><strong>ชื่อสิทธิบัตร</strong></td>
                   <td align="left"><strong>ผู้ป่วยนอก&nbsp;(OPD)</strong></td>
                   <td align="left"><strong>ผู้ป่วยใน&nbsp;(IPD)</strong></td>
-                  <td width="100" align="center">&nbsp;</td>
+                  <td width="100" align="center">
+                    <button type="submit"><a href="logout.php" style="text-decoration: none;">Logout</a></button>
+                    &nbsp;
+                  </td>
                 </tr>
                 <?php if ($totalRows_nw > 0) { ?>
                   <?php 
